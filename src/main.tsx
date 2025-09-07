@@ -12,6 +12,11 @@ import PronomY from './pages/PronomY';
 import PronomEn from './pages/PronomEn';
 import PronomsRelatifs from './pages/PronomsRelatifs';
 
+// Normalize Vite base (remove trailing slash) for React Router basename
+const basename = (import.meta as any).env?.BASE_URL
+  ? (import.meta as any).env.BASE_URL.replace(/\/+$|^$/, '')
+  : '/';
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -29,7 +34,7 @@ const router = createBrowserRouter([
   },
 ], {
   // Match the app's subpath on GitHub Pages
-  basename: import.meta.env.BASE_URL,
+  basename,
 });
 
 const root = createRoot(document.getElementById('root')!);
