@@ -11,6 +11,7 @@ import PronomsComplements from './pages/PronomsComplements';
 import PronomY from './pages/PronomY';
 import PronomEn from './pages/PronomEn';
 import PronomsRelatifs from './pages/PronomsRelatifs';
+import TopicGeneric from './pages/TopicGeneric';
 
 // Normalize Vite base (remove trailing slash) for React Router basename
 const basename = (import.meta as any).env?.BASE_URL
@@ -30,6 +31,8 @@ const router = createBrowserRouter([
       { path: 'pronom-y', element: <PronomY /> },
       { path: 'pronom-en', element: <PronomEn /> },
       { path: 'pronoms-relatifs', element: <PronomsRelatifs /> },
+      // Generic fallback for additional topics listed in topics.json
+      { path: '*', element: <TopicGeneric /> },
     ],
   },
 ], {
