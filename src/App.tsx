@@ -7,12 +7,15 @@ export default function App() {
   return (
     <div className="app-shell">
       <Header />
-      <Navigation />
-      <main className="container">
-        <Outlet />
-      </main>
+      <div className="layout container">
+        <aside className="sidebar">
+          <Navigation />
+        </aside>
+        <main className="content">
+          <Outlet />
+        </main>
+      </div>
       <Footer />
     </div>
   );
 }
-
