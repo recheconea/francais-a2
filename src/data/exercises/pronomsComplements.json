@@ -1,0 +1,11 @@
+[
+  {"id":"q1","prompt":"Remplace: Je regarde <u>le film</u>.","options":["Je le regarde.","Je lui regarde.","J'en regarde."],"correct":"Je le regarde.","explanation":"COD (le film) → le."},
+  {"id":"q2","prompt":"Remplace: Nous parlons <u>à Marie</u>.","options":["Nous lui parlons.","Nous les parlons.","Nous leur parlons."],"correct":"Nous lui parlons.","explanation":"COI persona → lui."},
+  {"id":"q3","prompt":"Remplace: Ils donnent le cadeau <u>à leurs amis</u>.","options":["Ils les donnent le cadeau.","Ils leur donnent le cadeau.","Ils y donnent le cadeau."],"correct":"Ils leur donnent le cadeau.","explanation":"\u00e0 + personas → leur."},
+  {"id":"q4","prompt":"Remplace: Tu as <u>beaucoup de livres</u>.","options":["Tu les as beaucoup.","Tu en as beaucoup.","Tu y as beaucoup."],"correct":"Tu en as beaucoup.","explanation":"Cantidad con de → en."},
+  {"id":"q5","prompt":"Remplace en PC: Elle a vu <u>ses amis</u>.","options":["Elle leur a vus.","Elle les a vus.","Elle y a vus."],"correct":"Elle les a vus.","explanation":"Concordancia con COD anterior (les)."},
+  {"id":"q6","prompt":"Remplace: Je pense <u>à mon examen</u>.","options":["J'y pense.","J'en pense.","Je lui pense."],"correct":"J'y pense.","explanation":"\u00e0 + cosa → y (ojo: no personas)."},
+  {"id":"q7","prompt":"Remplace: J’ach\u00e8te <u>des pommes</u>.","options":["Je les ach\u00e8te.","J'en ach\u00e8te.","J'y ach\u00e8te."],"correct":"J'en ach\u00e8te.","explanation":"de + cosa → en."},
+  {"id":"q8","prompt":"Remplace: Nous regardons <u>la s\u00e9rie</u>.","options":["Nous la regardons.","Nous lui regardons.","Nous y regardons."],"correct":"Nous la regardons.","explanation":"COD femenino → la."}
+]
+

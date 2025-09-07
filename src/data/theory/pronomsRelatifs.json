@@ -1,0 +1,13 @@
+{
+  "points": [
+    "<b>qui</b>: sujeto del relativo (verbo concuerda).",
+    "<b>que</b>: objeto directo del relativo (va seguido de sujeto+verbo).",
+    "<b>où</b>: lugar o tiempo.",
+    "<b>dont</b>: equivale a \"de + ...\" (parler de, avoir besoin de, etc.)."
+  ],
+  "examples": [
+    "La fille <b>qui</b> parle est ma soeur.",
+    "Le livre <b>que</b> j’ach\u00e8te est int\u00e9ressant."
+  ]
+}
+

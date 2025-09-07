@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Français A2 — Repaso Exprés</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root{
+      --bg:#0f172a; --panel:#111827; --muted:#94a3b8; --text:#e5e7eb;
+      --accent:#22c55e; --accent-2:#60a5fa; --danger:#ef4444; --chip:#1f2937;
+      --card:#0b1220; --border:#1f2937;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial}
+    a{color:var(--accent-2);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{position:sticky;top:0;z-index:10;background:rgba(15,23,42,.9);backdrop-filter:blur(6px);border-bottom:1px solid var(--border)}
+    .wrap{max-width:1000px;margin:0 auto;padding:16px}
+    .title{font-weight:700;font-size:20px}
+    nav{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}
+    nav a{background:var(--chip);padding:6px 10px;border-radius:8px;border:1px solid var(--border)}
+    main .wrap{padding:24px 16px 60px}
+    section{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:20px;margin:18px 0}
+    h2{margin:0 0 4px 0;font-size:20px}
+    .kicker{color:var(--muted);font-size:13px;margin-bottom:14px}
+    .theory{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;margin:14px 0}
+    .theory h3{margin:0 0 8px 0;font-size:16px}
+    .theory ul{margin:8px 0 0 18px}
+    .theory li{margin:4px 0}
+    .tip{border-left:3px solid var(--accent-2);padding-left:10px;color:#c7d2fe}
+    .examples{display:grid;gap:6px;margin-top:8px}
+    .examples .ex{background:var(--chip);border:1px dashed var(--border);border-radius:8px;padding:8px}
+    .controls{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+    button{background:#0ea5e9;border:0;color:white;border-radius:10px;padding:8px 12px;cursor:pointer}
+    button.secondary{background:#334155}
+    button.ghost{background:transparent;border:1px solid var(--border)}
+    .exercise-list{display:grid;gap:12px;margin-top:8px}
+    .exercise{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px}
+    .exercise p{margin:0 0 8px 0}
+    .exercise .opts{display:grid;gap:8px}
+    .exercise label{display:flex;gap:8px;align-items:flex-start;background:var(--chip);border:1px solid var(--border);padding:8px;border-radius:10px;cursor:pointer}
+    .exercise input{transform:translateY(2px)}
+    .feedback{margin-top:8px;font-size:14px}
+    .exercise.correct{border-color:rgba(34,197,94,.6)}
+    .exercise.incorrect{border-color:rgba(239,68,68,.6)}
+    .feedback.good{color:var(--accent)}
+    .feedback.bad{color:var(--danger)}
+    .answer{color:#bbf7d0}
+    code{background:#0b1220;border:1px solid var(--border);padding:2px 6px;border-radius:6px}
+    footer{color:var(--muted);font-size:13px;padding:24px 16px}
+  </style>
+  <meta name="description" content="Repaso exprés A2: passé composé, imparfait, futur simple; pronoms COD/COI/Y/EN; pronoms relatifs. Teoría clara y ejercicios autocorregibles." />
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="title">Français A2 — Repaso Exprés</div>
+      <nav>
+        <a href="#temps">Passé composé / Imparfait / Futur simple</a>
+        <a href="#pronoms">Pronoms compléments (COD/COI/Y/EN)</a>
+        <a href="#relatifs">Pronoms relatifs</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <!-- TEMPS -->
+      <section id="temps">
+        <h2>Passé composé / Imparfait / Futur simple</h2>
+        <div class="kicker">Cuándo usar cada tiempo + formación + ejemplos</div>
+
+        <div class="theory">
+          <h3>Claves</h3>
+          - Passé composé: acción terminada, puntual, cambio de estado; secuencia de hechos.
+          <br>- Imparfait: hábitos, descripción, contexto, acción en progreso de fondo.
+          <br>- Futur simple: hechos futuros, promesas, predicciones.
+          <div class="examples">
+            <div class="ex"><b>PC</b> Formación: auxiliar (<i>avoir/être</i>) + participe passé. <i>J’ai mangé</i>, <i>Elle est allée</i>.</div>
+            <div class="ex"><b>Imparfait</b> Formación: raíz de <i>nous</i> (présent) + terminaciones <i>-ais, -ais, -ait, -ions, -iez, -aient</i>. <i>je parlais</i>.</div>
+            <div class="ex"><b>Futur</b> Formación: infinitivo + <i>-ai, -as, -a, -ons, -ez, -ont</i>. <i>nous parlerons</i>.</div>
+            <div class="ex tip">Pista: “siempre, normalmente, de pequeño” → <b>imparfait</b>. “ayer, de repente, una vez” → <b>passé composé</b>. “mañana, el año próximo” → <b>futur</b>.</div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button onclick="gradeSection('temps')">Corregir sección</button>
+          <button class="secondary" onclick="showAnswers('temps')">Mostrar respuestas</button>
+          <button class="ghost" onclick="resetSection('temps')">Resetear</button>
+        </div>
+
+        <div class="exercise-list">
+          <div class="exercise" data-correct="avons visité">
+            <p>1) Hier, nous (visiter) le musée.</p>
+            <div class="opts">
+              <label><input type="radio" name="t-q1" value="avons visité"> nous <b>avons visité</b> le musée.</label>
+              <label><input type="radio" name="t-q1" value="visitons"> nous <b>visitons</b> le musée.</label>
+              <label><input type="radio" name="t-q1" value="visiterons"> nous <b>visiterons</b> le musée.</label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <div class="exercise" data-correct="jouais">
+            <p>2) Quand j’étais petit, je (jouer) au foot tous les jours.</p>
+            <div class="opts">
+              <label><input type="radio" name="t-q2" value="ai joué"> j’<b>ai joué</b></label>
+              <label><input type="radio" name="t-q2" value="jouais"> je <b>jouais</b></label>
+              <label><input type="radio" name="t-q2" value="jouerai"> je <b>jouerai</b></label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <div class="exercise" data-correct="partira">
+            <p>3) Demain, elle (partir) tôt.</p>
+            <div class="opts">
+              <label><input type="radio" name="t-q3" value="est partie"> elle <b>est partie</b></label>
+              <label><input type="radio" name="t-q3" value="partait"> elle <b>partait</b></label>
+              <label><input type="radio" name="t-q3" value="partira"> elle <b>partira</b></label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <div class="exercise" data-correct="lisais">
+            <p>4) Pendant que tu (lire), je faisais le dîner.</p>
+            <div class="opts">
+              <label><input type="radio" name="t-q4" value="as lu"> tu <b>as lu</b></label>
+              <label><input type="radio" name="t-q4" value="lisais"> tu <b>lisais</b></label>
+              <label><input type="radio" name="t-q4" value="liras"> tu <b>liras</b></label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <div class="exercise" data-correct="a fini">
+            <p>5) Hier à 20h, il (finir) ses devoirs.</p>
+            <div class="opts">
+              <label><input type="radio" name="t-q5" value="a fini"> il <b>a fini</b></label>
+              <label><input type="radio" name="t-q5" value="finissait"> il <b>finissait</b></label>
+              <label><input type="radio" name="t-q5" value="finira"> il <b>finira</b></label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <div class="exercise" data-correct="allions">
+            <p>6) Tous les étés, nous (aller) à la mer.</p>
+            <div class="opts">
+              <label><input type="radio" name="t-q6" value="sommes allés"> nous <b>sommes allés</b></label>
+              <label><input type="radio" name="t-q6" value="allions"> nous <b>allions</b></label>
+              <label><input type="radio" name="t-q6" value="irons"> nous <b>irons</b></label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <div class="exercise" data-correct="est tombée">
+            <p>7) Un jour, elle (tomber) dans les escaliers.</p>
+            <div class="opts">
+              <label><input type="radio" name="t-q7" value="est tombée"> elle <b>est tombée</b></label>
+              <label><input type="radio" name="t-q7" value="tombait"> elle <b>tombait</b></label>
+              <label><input type="radio" name="t-q7" value="tombera"> elle <b>tombera</b></label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <div class="exercise" data-correct="étudieront">
+            <p>8) L’année prochaine, ils (étudier) à l’étranger.</p>
+            <div class="opts">
+              <label><input type="radio" name="t-q8" value="ont étudié"> ils <b>ont étudié</b></label>
+              <label><input type="radio" name="t-q8" value="étudiaient"> ils <b>étudiaient</b></label>
+              <label><input type="radio" name="t-q8" value="étudieront"> ils <b>étudieront</b></label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRONOMS -->
+      <section id="pronoms">
+        <h2>Pronoms compléments: COD / COI / Y / EN</h2>
+        <div class="kicker">Sustituyen complementos y van antes del verbo</div>
+
+        <div class="theory">
+          <h3>Claves</h3>
+          - COD: <b>le, la, les, l’</b> (objeto directo). <i>Je regarde le film → Je le regarde.</i>
+          <br>- COI: <b>lui, leur</b> (a + persona). <i>Je parle à Marie → Je lui parle.</i>
+          <br>- <b>Y</b>: “à + cosa” / lugar. <i>Tu penses à ton travail → Tu y penses.</i> | <i>Ils vont à Paris → Ils y vont.</i>
+          <br>- <b>EN</b>: “de + cosa/cantidad”. <i>J’achète des pommes → J’en achète.</i> Conserva la cantidad: <i>J’en prends deux.</i>
+          <div class="examples">
+            <div class="ex">Orden típico: me/te/se/nous/vous + le/la/les + lui/leur + y + en.</div>
+            <div class="ex tip">En passé composé, el participio concuerda con el COD si va antes del verbo: <i>Je les ai vus</i>.</div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button onclick="gradeSection('pronoms')">Corregir sección</button>
+          <button class="secondary" onclick="showAnswers('pronoms')">Mostrar respuestas</button>
+          <button class="ghost" onclick="resetSection('pronoms')">Resetear</button>
+        </div>
+
+        <div class="exercise-list">
+          <div class="exercise" data-correct="Je le regarde.">
+            <p>1) Remplace: Je regarde <u>le film</u>.</p>
+            <div class="opts">
+              <label><input type="radio" name="p-q1" value="Je le regarde."> Je le regarde.</label>
+              <label><input type="radio" name="p-q1" value="Je lui regarde."> Je lui regarde.</label>
+              <label><input type="radio" name="p-q1" value="J'en regarde."> J’en regarde.</label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <div class="exercise" data-correct="Nous lui parlons.">
+            <p>2) Remplace: Nous parlons <u>à Marie</u>.</p>
+            <div class="opts">
+              <label><input type="radio" name="p-q2" value="Nous lui parlons."> Nous lui parlons.</label>
+              <label><input type="radio" name="p-q2" value="Nous les parlons."> Nous les parlons.</label>
+              <label><input type="radio" name="p-q2" value="Nous leur parlons."> Nous leur parlons.</label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <div class="exercise" data-correct="Ils y vont.">
+            <p>3) Remplace: Ils vont <u>à Paris</u>.</p>
+            <div class="opts">
+              <label><input type="radio" name="p-q3" value="Ils en vont."> Ils en vont.</label>
+              <label><input type="radio" name="p-q3" value="Ils y vont."> Ils y vont.</label>
+              <label><input type="radio" name="p-q3" value="Ils lui vont."> Ils lui vont.</label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <div class="exercise" data-correct="Tu en as beaucoup.">
+            <p>4) Remplace: Tu as <u>beaucoup de livres</u>.</p>
+            <div class="opts">
+              <label><input type="radio" name="p-q4" value="Tu les as beaucoup."> Tu les as beaucoup.</label>
+              <label><input type="radio" name="p-q4" value="Tu en has beaucoup."> Tu en has beaucoup. (ojo verbo)</label>
+              <label><input type="radio" name="p-q4" value="Tu en as beaucoup."> Tu en as beaucoup. ✅</label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <div class="exercise" data-correct="Elle y pense.">
+            <p>5) Remplace: Elle pense <u>à son travail</u>.</p>
+            <div class="opts">
+              <label><input type="radio" name="p-q5" value="Elle en pense."> Elle en pense.</label>
+              <label><input type="radio" name="p-q5" value="Elle y pense."> Elle y pense.</label>
+              <label><input type="radio" name="p-q5" value="Elle lui pense."> Elle lui pense.</label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <div class="exercise" data-correct="J'en achète.">
+            <p>6) Remplace: J’achète <u>des pommes</u>.</p>
+            <div class="opts">
+              <label><input type="radio" name="p-q6" value="Je les achète."> Je les achète.</label>
+              <label><input type="radio" name="p-q6" value="J'en achète."> J’en achète.</label>
+              <label><input type="radio" name="p-q6" value="J'y achète."> J’y achète.</label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <div class="exercise" data-correct="Nous leur donnons le cadeau.">
+            <p>7) Remplace: Nous donnons le cadeau <u>à nos amis</u>.</p>
+            <div class="opts">
+              <label><input type="radio" name="p-q7" value="Nous les donnons le cadeau."> Nous les donnons le cadeau.</label>
+              <label><input type="radio" name="p-q7" value="Nous leur donnons le cadeau."> Nous leur donnons le cadeau.</label>
+              <label><input type="radio" name="p-q7" value="Nous y donnons le cadeau."> Nous y donnons le cadeau.</label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <div class="exercise" data-correct="Elle les a vus.">
+            <p>8) Elle a vu <u>ses amis</u>? — Oui, …</p>
+            <div class="opts">
+              <label><input type="radio" name="p-q8" value="Elle les a vus."> Elle les a vus.</label>
+              <label><input type="radio" name="p-q8" value="Elle leur a vus."> Elle leur a vus.</label>
+              <label><input type="radio" name="p-q8" value="Elle y a vus."> Elle y a vus.</label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RELATIFS -->
+      <section id="relatifs">
+        <h2>Pronoms relatifs: qui / que / où / dont</h2>
+        <div class="kicker">Unen oraciones: sujeto, objeto, lugar/tiempo, “de”</div>
+
+        <div class="theory">
+          <h3>Claves</h3>
+          - <b>qui</b>: sujeto del relativo. <i>La fille <u>qui</u> parle…</i>
+          <br>- <b>que</b>: objeto directo del relativo. <i>Le livre <u>que</u> j’achète…</i>
+          <br>- <b>où</b>: lugar/tiempo. <i>La ville <u>où</u> j’habite…</i>
+          <br>- <b>dont</b>: “de + …”. <i>Le film <u>dont</u> je parle…</i>
+          <div class="examples">
+            <div class="ex">Tras <b>que</b> hay sujeto y verbo: <i>que je vois</i>. Con <b>qui</b> el verbo concuerda: <i>qui est</i>.</div>
+            <div class="ex tip">Pista: si puedes parafrasear con “de …”, usa <b>dont</b> (parler de, avoir besoin de, etc.).</div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button onclick="gradeSection('relatifs')">Corregir sección</button>
+          <button class="secondary" onclick="showAnswers('relatifs')">Mostrar respuestas</button>
+          <button class="ghost" onclick="resetSection('relatifs')">Resetear</button>
+        </div>
+
+        <div class="exercise-list">
+          <div class="exercise" data-correct="que">
+            <p>1) C’est le livre ___ j’ai acheté.</p>
+            <div class="opts">
+              <label><input type="radio" name="r-q1" value="qui"> qui</label>
+              <label><input type="radio" name="r-q1" value="que"> que</label>
+              <label><input type="radio" name="r-q1" value="où"> où</label>
+              <label><input type="radio" name="r-q1" value="dont"> dont</label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <div class="exercise" data-correct="qui">
+            <p>2) Je connais une personne ___ habite ici.</p>
+            <div class="opts">
+              <label><input type="radio" name="r-q2" value="qui"> qui</label>
+              <label><input type="radio" name="r-q2" value="que"> que</label>
+              <label><input type="radio" name="r-q2" value="où"> où</label>
+              <label><input type="radio" name="r-q2" value="dont"> dont</label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <div class="exercise" data-correct="où">
+            <p>3) Voilà la ville ___ je suis né.</p>
+            <div class="opts">
+              <label><input type="radio" name="r-q3" value="qui"> qui</label>
+              <label><input type="radio" name="r-q3" value="que"> que</label>
+              <label><input type="radio" name="r-q3" value="où"> où</label>
+              <label><input type="radio" name="r-q3" value="dont"> dont</label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <div class="exercise" data-correct="dont">
+            <p>4) C’est un film ___ tout le monde parle.</p>
+            <div class="opts">
+              <label><input type="radio" name="r-q4" value="qui"> qui</label>
+              <label><input type="radio" name="r-q4" value="que"> que</label>
+              <label><input type="radio" name="r-q4" value="où"> où</label>
+              <label><input type="radio" name="r-q4" value="dont"> dont</label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <div class="exercise" data-correct="que">
+            <p>5) La maison ___ nous avons visitée est ancienne.</p>
+            <div class="opts">
+              <label><input type="radio" name="r-q5" value="qui"> qui</label>
+              <label><input type="radio" name="r-q5" value="que"> que</label>
+              <label><input type="radio" name="r-q5" value="où"> où</label>
+              <label><input type="radio" name="r-q5" value="dont"> dont</label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <div class="exercise" data-correct="dont">
+            <p>6) L’étudiant ___ je t’ai parlé est sympa.</p>
+            <div class="opts">
+              <label><input type="radio" name="r-q6" value="qui"> qui</label>
+              <label><input type="radio" name="r-q6" value="que"> que</label>
+              <label><input type="radio" name="r-q6" value="où"> où</label>
+              <label><input type="radio" name="r-q6" value="dont"> dont</label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <div class="exercise" data-correct="où">
+            <p>7) Le jour ___ il est arrivé, il pleuvait.</p>
+            <div class="opts">
+              <label><input type="radio" name="r-q7" value="qui"> qui</label>
+              <label><input type="radio" name="r-q7" value="que"> que</label>
+              <label><input type="radio" name="r-q7" value="où"> où</label>
+              <label><input type="radio" name="r-q7" value="dont"> dont</label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+
+          <div class="exercise" data-correct="qui">
+            <p>8) C’est une idée ___ me plaît.</p>
+            <div class="opts">
+              <label><input type="radio" name="r-q8" value="qui"> qui</label>
+              <label><input type="radio" name="r-q8" value="que"> que</label>
+              <label><input type="radio" name="r-q8" value="où"> où</label>
+              <label><input type="radio" name="r-q8" value="dont"> dont</label>
+            </div>
+            <div class="feedback"></div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        Cómo hostear: abre este archivo localmente con doble click, o súbelo tal cual a GitHub Pages/Netlify/Vercel (no requiere build ni backend).
+      </footer>
+
+    </div>
+  </main>
+
+  <script>
+    function gradeSection(sectionId){
+      const section = document.getElementById(sectionId);
+      const exercises = section.querySelectorAll('.exercise');
+      exercises.forEach(ex => {
+        const correct = ex.dataset.correct?.trim();
+        const chosen = ex.querySelector('input[type=radio]:checked');
+        const feedback = ex.querySelector('.feedback');
+        ex.classList.remove('correct','incorrect');
+        feedback.textContent='';
+        feedback.className='feedback';
+        if(!chosen){
+          feedback.textContent='Selecciona una respuesta.';
+          return;
+        }
+        if(chosen.value.trim() === correct){
+          ex.classList.add('correct');
+          feedback.textContent='¡Bien!';
+          feedback.classList.add('good');
+        }else{
+          ex.classList.add('incorrect');
+          feedback.innerHTML='Incorrecto. Respuesta: <span class="answer">'+correct+'</span>';
+          feedback.classList.add('bad');
+        }
+      });
+      const firstBad = section.querySelector('.exercise.incorrect');
+      if(firstBad) firstBad.scrollIntoView({behavior:'smooth',block:'center'});
+    }
+
+    function showAnswers(sectionId){
+      const section = document.getElementById(sectionId);
+      section.querySelectorAll('.exercise').forEach(ex=>{
+        const correct = ex.dataset.correct?.trim();
+        const inputs = ex.querySelectorAll('input[type=radio]');
+        inputs.forEach(inp=>{
+          if(inp.value.trim() === correct){
+            inp.checked = true;
+          }
+        });
+        const feedback = ex.querySelector('.feedback');
+        ex.classList.add('correct');
+        feedback.innerHTML='Respuesta: <span class="answer">'+correct+'</span>';
+        feedback.classList.add('good');
+      });
+    }
+
+    function resetSection(sectionId){
+      const section = document.getElementById(sectionId);
+      section.querySelectorAll('.exercise').forEach(ex=>{
+        ex.classList.remove('correct','incorrect');
+        ex.querySelectorAll('input[type=radio]').forEach(inp => inp.checked=false);
+        const feedback = ex.querySelector('.feedback');
+        feedback.textContent='';
+        feedback.className='feedback';
+      });
+    }
+  </script>
+</body>
+</html>
+

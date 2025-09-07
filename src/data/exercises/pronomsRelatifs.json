@@ -1,0 +1,11 @@
+[
+  {"id":"q1","prompt":"C’est le livre ___ j’ai acheté.","options":["qui","que","où","dont"],"correct":"que","explanation":"Tras que hay sujeto+verbo: que j’ai"},
+  {"id":"q2","prompt":"Je connais une personne ___ habite ici.","options":["qui","que","où","dont"],"correct":"qui","explanation":"Qui como sujeto del relativo."},
+  {"id":"q3","prompt":"Voilà la ville ___ je suis né.","options":["qui","que","où","dont"],"correct":"où","explanation":"Lugar/tiempo → où."},
+  {"id":"q4","prompt":"C’est un film ___ tout le monde parle.","options":["qui","que","où","dont"],"correct":"dont","explanation":"Parler de → dont."},
+  {"id":"q5","prompt":"La maison ___ nous avons visitée est ancienne.","options":["qui","que","où","dont"],"correct":"que","explanation":"Objeto directo: que + sujeto."},
+  {"id":"q6","prompt":"L’étudiant ___ je t’ai parlé est sympa.","options":["qui","que","où","dont"],"correct":"dont","explanation":"Parler de → dont."},
+  {"id":"q7","prompt":"Le jour ___ il est arrivé, il pleuvait.","options":["qui","que","où","dont"],"correct":"où","explanation":"Tiempo → où."},
+  {"id":"q8","prompt":"C’est une idée ___ me plaît.","options":["qui","que","où","dont"],"correct":"qui","explanation":"Qui como sujeto del relativo."}
+]
+

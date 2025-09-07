@@ -1,0 +1,11 @@
+[
+  {"id":"q1","prompt":"(nous) Hier, nous (visiter) le musée.","options":["avons visité","visitons","visiterons"],"correct":"avons visité","explanation":"Marcador de pasado puntual → PC."},
+  {"id":"q2","prompt":"(elle) Un jour, elle (tomber) dans les escaliers.","options":["est tombée","tombait","tombera"],"correct":"est tombée","explanation":"Cambio de estado; con être."},
+  {"id":"q3","prompt":"(je) Ce matin, j’(avoir) un problème.","options":["ai eu","avais","aurai"],"correct":"ai eu","explanation":"Avoir: participe passé eu."},
+  {"id":"q4","prompt":"(ils) Ils (voir) le film hier soir.","options":["ont vu","voyaient","verront"],"correct":"ont vu","explanation":"Voir → vu."},
+  {"id":"q5","prompt":"(elle) Elle (prendre) le bus.","options":["a pris","prenait","prendra"],"correct":"a pris","explanation":"Prendre → pris."},
+  {"id":"q6","prompt":"(il) Il (faire) ses devoirs à 20h.","options":["a fait","faisait","fera"],"correct":"a fait","explanation":"Hecho puntual terminado."},
+  {"id":"q7","prompt":"(nous) Nous (aller) au marché.","options":["sommes allés","allions","irons"],"correct":"sommes allés","explanation":"Verbo de movimiento → être + acuerdo."},
+  {"id":"q8","prompt":"(elles) Elles (naître) en 2001.","options":["sont nées","naissaient","naîtront"],"correct":"sont nées","explanation":"Naître → être + né(e)(s)."}
+]
+

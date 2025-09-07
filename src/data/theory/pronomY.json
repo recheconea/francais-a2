@@ -1,0 +1,12 @@
+{
+  "points": [
+    "Sustituye \"\u00e0 + cosa\" y lugares.",
+    "No sustituye personas: para personas usa COI (lui/leur).",
+    "Colocaci\u00f3n: antes del verbo; con imperativo afirmativo: va despu\u00e9s y con guion (Vas-y!)."
+  ],
+  "examples": [
+    "Tu penses \u00e0 ton travail \u2192 Tu <b>y</b> penses.",
+    "Ils vont \u00e0 Paris \u2192 Ils <b>y</b> vont."
+  ]
+}
+

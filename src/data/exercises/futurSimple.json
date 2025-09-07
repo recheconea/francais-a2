@@ -1,0 +1,11 @@
+[
+  {"id":"q1","prompt":"Demain, elle (partir) tôt.","options":["est partie","partait","partira"],"correct":"partira","explanation":"Demain → futur simple."},
+  {"id":"q2","prompt":"Nous (avoir) du temps ce week-end.","options":["aurons","avions","avons"],"correct":"aurons","explanation":"Futuro con verbo irregular avoir → aur-"},
+  {"id":"q3","prompt":"Tu (voir) ce film bientôt.","options":["verras","voyais","as vu"],"correct":"verras","explanation":"Bientôt → futur simple."},
+  {"id":"q4","prompt":"Quand il arrivera, je (être) prêt.","options":["serai","étais","suis"],"correct":"serai","explanation":"Futuro en la principal tras quand + futur."},
+  {"id":"q5","prompt":"Ils (faire) leurs devoirs après le dîner.","options":["feront","faisaient","ont fait"],"correct":"feront","explanation":"Futur simple de faire → fer-"},
+  {"id":"q6","prompt":"Vous (aller) en France en juillet.","options":["irez","alliez","allez"],"correct":"irez","explanation":"Plan futuro → futur simple."},
+  {"id":"q7","prompt":"Je te (dire) la vérité.","options":["dirai","disais","ai dit"],"correct":"dirai","explanation":"Promesa → futur simple."},
+  {"id":"q8","prompt":"Nous (pouvoir) venir demain.","options":["pourrons","pouvions","pouvons"],"correct":"pourrons","explanation":"Futuro poder → pourr-"}
+]
+

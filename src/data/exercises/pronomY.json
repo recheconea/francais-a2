@@ -1,0 +1,11 @@
+[
+  {"id":"q1","prompt":"Remplace: Elle pense <u>à son travail</u>.","options":["Elle en pense.","Elle y pense.","Elle lui pense."],"correct":"Elle y pense.","explanation":"\u00e0 + cosa → y."},
+  {"id":"q2","prompt":"Remplace: Ils vont <u>à Paris</u>.","options":["Ils en vont.","Ils y vont.","Ils leur vont."],"correct":"Ils y vont.","explanation":"Lugar → y."},
+  {"id":"q3","prompt":"Remplace: Tu r\u00e9fl\u00e9chis <u>\u00e0 ce probl\u00e8me</u>.","options":["Tu y r\u00e9fl\u00e9chis.","Tu lui r\u00e9fl\u00e9chis.","Tu en r\u00e9fl\u00e9chis."],"correct":"Tu y r\u00e9fl\u00e9chis.","explanation":"\u00e0 + cosa → y."},
+  {"id":"q4","prompt":"Remplace: Nous pensons <u>\u00e0 nos vacances</u>.","options":["Nous y pensons.","Nous en pensons.","Nous leur pensons."],"correct":"Nous y pensons.","explanation":"\u00e0 + cosa → y."},
+  {"id":"q5","prompt":"Placement: Vas-__ ! (aller, imperativo)","options":["y","en","lui"],"correct":"y","explanation":"Imperativo afirmativo: despu\u00e9s y con guion."},
+  {"id":"q6","prompt":"Remplace: Je m’int\u00e9resse <u>\u00e0 la musique</u>.","options":["Je m’y int\u00e9resse.","Je m’en int\u00e9resse.","Je m’y int\u00e9resse \u00e0."],"correct":"Je m’y int\u00e9resse.","explanation":"\u00e0 + cosa → y."},
+  {"id":"q7","prompt":"Remplace: Ils habitent <u>\u00e0 Lyon</u>.","options":["Ils y habitent.","Ils en habitent.","Ils y vont."],"correct":"Ils y habitent.","explanation":"Lugar fijo → y."},
+  {"id":"q8","prompt":"Remplace: Nous r\u00e9pondons <u>\u00e0 Marie</u>.","options":["Nous y r\u00e9pondons.","Nous lui r\u00e9pondons.","Nous en r\u00e9pondons."],"correct":"Nous lui r\u00e9pondons.","explanation":"\u00e0 + persona → COI (lui)."}
+]
+

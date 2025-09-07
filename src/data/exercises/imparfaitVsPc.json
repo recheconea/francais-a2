@@ -1,0 +1,11 @@
+[
+  {"id":"q1","prompt":"Hier, nous (visiter) le musée.","options":["avons visité","visitons","visiterons"],"correct":"avons visité","explanation":"Marcador de pasado puntual (hier) → PC."},
+  {"id":"q2","prompt":"Quand j’étais petit, je (jouer) au foot tous les jours.","options":["ai joué","jouais","jouerai"],"correct":"jouais","explanation":"Hábito en el pasado → imparfait."},
+  {"id":"q3","prompt":"Pendant que tu (lire), je faisais le dîner.","options":["as lu","lisais","liras"],"correct":"lisais","explanation":"Acción en progreso (pendant que) → imparfait."},
+  {"id":"q4","prompt":"Un jour, elle (tomber) dans les escaliers.","options":["est tombée","tombait","tombera"],"correct":"est tombée","explanation":"Hecho puntual / cambio → PC con être."},
+  {"id":"q5","prompt":"Tous les étés, nous (aller) à la mer.","options":["sommes allés","allions","irons"],"correct":"allions","explanation":"Frecuencia repetida → imparfait."},
+  {"id":"q6","prompt":"Hier à 20h, il (finir) ses devoirs.","options":["a fini","finissait","finira"],"correct":"a fini","explanation":"Momento preciso y terminado → PC."},
+  {"id":"q7","prompt":"À l’époque, je (travailler) beaucoup.","options":["ai travaillé","travaillais","travaillerai"],"correct":"travaillais","explanation":"Marco temporal en pasado → imparfait."},
+  {"id":"q8","prompt":"Soudain, ils (arriver).","options":["arrivaient","sont arrivés","arriveront"],"correct":"sont arrivés","explanation":"Soudain (de repente) → PC con être."}
+]
+

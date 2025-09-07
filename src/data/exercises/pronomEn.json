@@ -1,0 +1,11 @@
+[
+  {"id":"q1","prompt":"Remplace: J’ach\u00e8te <u>des pommes</u>.","options":["Je les ach\u00e8te.","J'en ach\u00e8te.","J'y ach\u00e8te."],"correct":"J'en ach\u00e8te.","explanation":"de + cosa → en."},
+  {"id":"q2","prompt":"Remplace: Tu as <u>beaucoup de livres</u>.","options":["Tu en as beaucoup.","Tu y as beaucoup.","Tu les as beaucoup."],"correct":"Tu en as beaucoup.","explanation":"Cantidad con de → en."},
+  {"id":"q3","prompt":"Remplace y conserva cantidad: Je prends <u>deux pommes</u>.","options":["J’en prends deux.","Je les prends deux.","J’y prends deux."],"correct":"J’en prends deux.","explanation":"Conservar cantidad con en."},
+  {"id":"q4","prompt":"Remplace: Elle parle souvent <u>de ce film</u>.","options":["Elle en parle souvent.","Elle y parle souvent.","Elle le parle souvent."],"correct":"Elle en parle souvent.","explanation":"de + cosa → en."},
+  {"id":"q5","prompt":"Imperativo: Prends-__ ! (en)","options":["en","y","le"],"correct":"en","explanation":"Imperativo afirmativo: despu\u00e9s y con guion."},
+  {"id":"q6","prompt":"Remplace: Nous avons <u>besoin de temps</u>.","options":["Nous en avons besoin.","Nous y avons besoin.","Nous les avons besoin."],"correct":"Nous en avons besoin.","explanation":"Verbo con de → en."},
+  {"id":"q7","prompt":"Remplace: Il parle <u>de ses amis</u>.","options":["Il leur parle.","Il en parle.","Il y parle."],"correct":"Il en parle.","explanation":"de + personas como grupo → en (no COI)."},
+  {"id":"q8","prompt":"Remplace: Je n’ai pas <u>de temps</u>.","options":["Je n’en ai pas.","Je ne l’ai pas.","Je n’y ai pas."],"correct":"Je n’en ai pas.","explanation":"de + cosa en negaci\u00f3n → en."}
+]
+
