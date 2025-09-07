@@ -27,8 +27,10 @@ const router = createBrowserRouter([
       { path: 'pronoms-relatifs', element: <PronomsRelatifs /> },
     ],
   },
-]);
+], {
+  // Match the app's subpath on GitHub Pages
+  basename: import.meta.env.BASE_URL,
+});
 
 const root = createRoot(document.getElementById('root')!);
 root.render(<RouterProvider router={router} />);
-
